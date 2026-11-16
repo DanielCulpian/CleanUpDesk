@@ -1,0 +1,1 @@
+<Solution><Folder Name="/src/"><Project Path="src/CleanUpDesk.Core/CleanUpDesk.Core.csproj"/><Project Path="src/CleanUpDesk.App/CleanUpDesk.App.csproj"/></Folder><Folder Name="/tests/"><Project Path="tests/CleanUpDesk.Tests/CleanUpDesk.Tests.csproj"/><Project Path="tests/CleanUpDesk.UiTests/CleanUpDesk.UiTests.csproj"/></Folder></Solution>
