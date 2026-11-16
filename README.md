@@ -4,7 +4,7 @@ CleanUpDesk is an offline file analysis and cleanup desktop application for **Wi
 
 **Programmed by OpenAI Codex, directed and manually tested by a human: [DanielCulpian](https://github.com/DanielCulpian).** Codex also runs automated regression tests. Human feedback has driven the implementation and fixes; it does not imply certification on every Windows installation.
 
-The first public release is planned as **1.0.0**. This repository preparation does not create a release or tag. The project is licensed under [MIT](LICENSE).
+Release **1.0.0** has explicit assembly/package metadata and prepared [release notes](docs/releases/1.0.0.md). Publication and clean-machine package checks are separate steps; this text does not assert that a GitHub release has already been published. The project is licensed under [MIT](LICENSE).
 
 ## Features
 
@@ -37,7 +37,7 @@ python scripts/verify-source.py
 dotnet run --project scripts/DocumentationAudit -- .
 ```
 
-`scripts/build.ps1` restores, builds, and runs both suites. `scripts/build.ps1 -Publish` additionally creates a self-contained Windows x64 archive if the runtime packages are available. See [release preparation](docs/RELEASE.md) for framework-dependent packaging and the checks still required before 1.0.0.
+`scripts/build.ps1` restores, builds, and runs both suites. For release assets, use `scripts/package-release.ps1` (self-contained) or add `-FrameworkDependent` (requires the desktop runtime). Both validate first and produce versioned ZIPs with licenses, release notes, and SHA-256 checksums. See [release preparation](docs/RELEASE.md) for the remaining publication checks.
 
 ## Quick start
 

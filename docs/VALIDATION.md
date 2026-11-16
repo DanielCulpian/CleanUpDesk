@@ -49,3 +49,9 @@ Verified on November 16, 2026 with .NET SDK 10.0.404 on Windows:
 | Packaging script | PowerShell syntax parsed successfully; packaging itself was not rerun for this documentation pass |
 
 The NU1900 warnings mean this run did **not** complete an online dependency vulnerability audit. Repeat restore/audit with network access before release. Generated verification logs stay in ignored local tooling directories rather than entering the public repository.
+
+## Release 1.0.0 preparation
+
+Rebuilt with explicit 1.0.0 metadata on November 16, 2026. Solution build: zero errors, five NU1900 network/audit warnings. Core tests: 66 passed, zero failed. WPF suite: passed with zero native playback attempts. Source checks and the 538-routine documentation audit passed.
+
+Framework-dependent publishing succeeded from cached dependencies. Self-contained publishing failed with NU1301 because required runtime packages could not be downloaded from the restricted environment. The framework-dependent archive requires .NET Desktop Runtime 10 x64. Archive integrity, required assets, runtime configuration, SHA-256, and executable version metadata are checked locally. Fresh-machine startup remains a manual release gate; no claim of a completed clean-machine test is made.
