@@ -1,0 +1,2 @@
+Run `python scripts/verify-source.py` to regenerate current structural validation results.
+See VALIDATION.md for the scope and limitations of these checks.
