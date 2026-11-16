@@ -1,0 +1,59 @@
+**/bin/
+**/obj/
+.tools/
+artifacts/
+*.user
+
+# Local tools, agent state, and personal recovery helper
+.agents/
+.codex/
+/scripts/remove-own-test-fixture.ps1
+
+# IDE and machine-specific state
+.vs/
+.idea/
+*.suo
+*.userosscache
+*.sln.docstates
+.vscode/settings.json
+.vscode/launch.json
+
+# Test, coverage, and diagnostic output
+TestResults/
+coverage/
+*.trx
+*.coverage
+*.coveragexml
+*.log
+*.dmp
+*.tmp
+*.bak
+__pycache__/
+*.pyc
+
+# Personal indexes and SQLite sidecars must never be committed
+*.db
+*.db-wal
+*.db-shm
+*.sqlite
+*.sqlite3
+*.sqlite3-wal
+*.sqlite3-shm
+*.db-journal
+*.sqlite-journal
+*.sqlite-wal
+*.sqlite-shm
+
+# Local credentials and packaging output
+.env
+.env.*
+!.env.example
+*.pfx
+*.p12
+*.key
+*.nupkg
+*.snupkg
+*.zip
+Thumbs.db
+Desktop.ini
+.DS_Store
